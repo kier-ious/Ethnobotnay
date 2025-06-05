@@ -1,0 +1,492 @@
+    {
+    "data": [
+        {
+            "type": "node--ethnobotany",
+            "id": "2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0",
+            "links": {
+                "self": {
+                    "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0?resourceVersion=id%3A2424"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 414,
+                "drupal_internal__vid": 2424,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-04T16:42:11+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Amphicarpaea bracteate | 𐓡𐓪͘𐓜𐓣͘𐓤𐓟 𐓘𐓬𐓟 | Hog Peanut",
+                "created": "2025-04-21T20:19:05+00:00",
+                "changed": "2025-06-04T16:42:11+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "moderation_state": null,
+                "metatag": null,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "publish_state": null,
+                "unpublish_state": null,
+                "body": {
+                    "value": "<p>Amphicarpaea bracteata is an annual to perennial vine in the legume family, native to woodland, thickets, and moist slopes in eastern North America.</p>",
+                    "format": "advanced_html",
+                    "processed": "<p>Amphicarpaea bracteata is an annual to perennial vine in the legume family, native to woodland, thickets, and moist slopes in eastern North America.</p>",
+                    "summary": ""
+                },
+                "field_body_2": [],
+                "field_card_summary": "test",
+                "field_common_name": "Hog Peanut!!!",
+                "field_osage_name": "𐓡𐓪͘𐓜𐓣͘𐓤𐓟 𐓘𐓬𐓟",
+                "field_scientific_name": "Amphicarpaea bracteate",
+                "field_thumbnail_url": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "97b4b07c-f1e4-4673-8f96-6d952d8977f4",
+                        "meta": {
+                            "drupal_internal__target_id": "ethnobotany"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/node_type?resourceVersion=id%3A2424"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/relationships/node_type?resourceVersion=id%3A2424"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "ac843c2b-8a90-4013-8d83-ec8fb125f788",
+                        "meta": {
+                            "drupal_internal__target_id": 106
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/revision_uid?resourceVersion=id%3A2424"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/relationships/revision_uid?resourceVersion=id%3A2424"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "5aecc010-6bd4-47a2-b368-4b87d3f5a67c",
+                        "meta": {
+                            "drupal_internal__target_id": 0
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/uid?resourceVersion=id%3A2424"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/relationships/uid?resourceVersion=id%3A2424"
+                        }
+                    }
+                },
+                "field_images": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/field_images?resourceVersion=id%3A2424"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/relationships/field_images?resourceVersion=id%3A2424"
+                        }
+                    }
+                },
+                "field_image_slider": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/field_image_slider?resourceVersion=id%3A2424"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/2cdb9092-b1b9-422d-b3dd-6f0d0dc9afe0/relationships/field_image_slider?resourceVersion=id%3A2424"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--ethnobotany",
+            "id": "b893696c-b99c-481f-a4ee-9f703d49e54b",
+            "links": {
+                "self": {
+                    "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b?resourceVersion=id%3A2426"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 422,
+                "drupal_internal__vid": 2426,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-04T16:44:49+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Carya illinoinensis | 𐓷𐓘𐓰𐓘𐓮𐓰𐓪𐓮𐓰𐓘 𐓡𐓶 | Pecan",
+                "created": "2025-04-21T20:40:31+00:00",
+                "changed": "2025-06-04T16:44:49+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": null,
+                "moderation_state": null,
+                "metatag": null,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "publish_state": null,
+                "unpublish_state": null,
+                "body": {
+                    "value": "<p><span style=\"-webkit-text-stroke-width:0px;color:rgb(88, 88, 90);display:inline !important;float:none;font-family:&quot;Open Sans&quot;;font-size:14.6667px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Thomas Jefferson planted seeds at Monticello and gave some to George Washington; now these Pecans are the oldest trees in Mount Vernon.</span></p>",
+                    "format": "advanced_html",
+                    "processed": "<p><span style=\"-webkit-text-stroke-width:0px;color:rgb(88, 88, 90);display:inline !important;float:none;font-family:&quot;Open Sans&quot;;font-size:14.6667px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Thomas Jefferson planted seeds at Monticello and gave some to George Washington; now these Pecans are the oldest trees in Mount Vernon.</span></p>",
+                    "summary": ""
+                },
+                "field_body_2": [],
+                "field_card_summary": "pecan test",
+                "field_common_name": "Pecan",
+                "field_osage_name": "𐓷𐓘𐓰𐓘𐓮𐓰𐓪𐓮𐓰𐓘 𐓡𐓶",
+                "field_scientific_name": "Carya illinoinensis",
+                "field_thumbnail_url": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "97b4b07c-f1e4-4673-8f96-6d952d8977f4",
+                        "meta": {
+                            "drupal_internal__target_id": "ethnobotany"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/node_type?resourceVersion=id%3A2426"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/relationships/node_type?resourceVersion=id%3A2426"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "ac843c2b-8a90-4013-8d83-ec8fb125f788",
+                        "meta": {
+                            "drupal_internal__target_id": 106
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/revision_uid?resourceVersion=id%3A2426"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/relationships/revision_uid?resourceVersion=id%3A2426"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "5aecc010-6bd4-47a2-b368-4b87d3f5a67c",
+                        "meta": {
+                            "drupal_internal__target_id": 0
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/uid?resourceVersion=id%3A2426"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/relationships/uid?resourceVersion=id%3A2426"
+                        }
+                    }
+                },
+                "field_images": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/field_images?resourceVersion=id%3A2426"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/relationships/field_images?resourceVersion=id%3A2426"
+                        }
+                    }
+                },
+                "field_image_slider": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/field_image_slider?resourceVersion=id%3A2426"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/b893696c-b99c-481f-a4ee-9f703d49e54b/relationships/field_image_slider?resourceVersion=id%3A2426"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--ethnobotany",
+            "id": "27818ea0-8a4d-4c17-95c3-92fe2bc3818c",
+            "links": {
+                "self": {
+                    "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c?resourceVersion=id%3A2428"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 412,
+                "drupal_internal__vid": 2428,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-04T16:45:52+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Allium canadense | 𐓨𐓘͘𐓻𐓘͘𐓸𐓟 | Wild Onion",
+                "created": "2025-04-21T20:08:35+00:00",
+                "changed": "2025-06-04T16:45:52+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "moderation_state": null,
+                "metatag": null,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "publish_state": null,
+                "unpublish_state": null,
+                "body": {
+                    "value": "<p>Wild Onion prefers open, unshaded areas, where they bloom during April and May. When rainfall is sufficient, they sometimes bloom again in the fall.</p>",
+                    "format": "advanced_html",
+                    "processed": "<p>Wild Onion prefers open, unshaded areas, where they bloom during April and May. When rainfall is sufficient, they sometimes bloom again in the fall.</p>",
+                    "summary": ""
+                },
+                "field_body_2": [],
+                "field_card_summary": "onion test",
+                "field_common_name": "Wild Onion",
+                "field_osage_name": "𐓨𐓘͘𐓻𐓘͘𐓸𐓟",
+                "field_scientific_name": "Allium canadense",
+                "field_thumbnail_url": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "97b4b07c-f1e4-4673-8f96-6d952d8977f4",
+                        "meta": {
+                            "drupal_internal__target_id": "ethnobotany"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/node_type?resourceVersion=id%3A2428"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/relationships/node_type?resourceVersion=id%3A2428"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "ac843c2b-8a90-4013-8d83-ec8fb125f788",
+                        "meta": {
+                            "drupal_internal__target_id": 106
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/revision_uid?resourceVersion=id%3A2428"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/relationships/revision_uid?resourceVersion=id%3A2428"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "5aecc010-6bd4-47a2-b368-4b87d3f5a67c",
+                        "meta": {
+                            "drupal_internal__target_id": 0
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/uid?resourceVersion=id%3A2428"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/relationships/uid?resourceVersion=id%3A2428"
+                        }
+                    }
+                },
+                "field_images": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/field_images?resourceVersion=id%3A2428"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/relationships/field_images?resourceVersion=id%3A2428"
+                        }
+                    }
+                },
+                "field_image_slider": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/field_image_slider?resourceVersion=id%3A2428"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/27818ea0-8a4d-4c17-95c3-92fe2bc3818c/relationships/field_image_slider?resourceVersion=id%3A2428"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--ethnobotany",
+            "id": "245301b6-8d68-454b-a880-f87f6d25c9ef",
+            "links": {
+                "self": {
+                    "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef?resourceVersion=id%3A2432"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 411,
+                "drupal_internal__vid": 2432,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-04T18:47:40+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Aesculus glabra | 𐓰𐓘𐓯𐓤𐓘 𐓡𐓶 | Ohio Buckeye",
+                "created": "2025-04-21T20:05:51+00:00",
+                "changed": "2025-06-04T18:47:40+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": true,
+                "moderation_state": null,
+                "metatag": null,
+                "path": {
+                    "alias": null,
+                    "pid": null,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "publish_state": null,
+                "unpublish_state": null,
+                "body": {
+                    "value": "<p><span style=\"-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(32, 33, 34);display:inline !important;float:none;font-family:sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">The name stems from Native Americans, who called the nut \"hetuck\", which means \"buck eye\". The markings of the nut resembled the eyes of a deer.</span></p>",
+                    "format": "advanced_html",
+                    "processed": "<p><span style=\"-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(32, 33, 34);display:inline !important;float:none;font-family:sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">The name stems from Native Americans, who called the nut \"hetuck\", which means \"buck eye\". The markings of the nut resembled the eyes of a deer.</span></p>",
+                    "summary": ""
+                },
+                "field_body_2": [],
+                "field_card_summary": "buck eye test",
+                "field_common_name": "Ohio Buckeye",
+                "field_osage_name": "𐓰𐓘𐓯𐓤𐓘 𐓡𐓶 ",
+                "field_scientific_name": "Aesculus glabra ",
+                "field_thumbnail_url": "assets/ohio-buckeye.jpg"
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "97b4b07c-f1e4-4673-8f96-6d952d8977f4",
+                        "meta": {
+                            "drupal_internal__target_id": "ethnobotany"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/node_type?resourceVersion=id%3A2432"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/relationships/node_type?resourceVersion=id%3A2432"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "ac843c2b-8a90-4013-8d83-ec8fb125f788",
+                        "meta": {
+                            "drupal_internal__target_id": 106
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/revision_uid?resourceVersion=id%3A2432"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/relationships/revision_uid?resourceVersion=id%3A2432"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "5aecc010-6bd4-47a2-b368-4b87d3f5a67c",
+                        "meta": {
+                            "drupal_internal__target_id": 0
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/uid?resourceVersion=id%3A2432"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/relationships/uid?resourceVersion=id%3A2432"
+                        }
+                    }
+                },
+                "field_images": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/field_images?resourceVersion=id%3A2432"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/relationships/field_images?resourceVersion=id%3A2432"
+                        }
+                    }
+                },
+                "field_image_slider": {
+                    "data": [],
+                    "links": {
+                        "related": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/field_image_slider?resourceVersion=id%3A2432"
+                        },
+                        "self": {
+                            "href": "https://www.osageculture.com/jsonapi/node/ethnobotany/245301b6-8d68-454b-a880-f87f6d25c9ef/relationships/field_image_slider?resourceVersion=id%3A2432"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+  }
