@@ -1,8 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: sans-serif;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
+  overflow-x: hidden;
 }
 
 input[type="search"] {
@@ -12,87 +20,135 @@ input[type="search"] {
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-.card {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  max-width: 300px;
-  font-family: Arial, sans-serif;
-}
-
-.card-img {
-  width: auto;
-  height: auto;
-  display: block;
-}
-
-.card-body {
-  padding: 1em;
-  background-color: #fff;
-}
-
-.sci-name {
-  font-size: clamp(1rem, 0.04em + 1.25vw, 1.5em);
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 0.25em;
-}
-
-.osage-name {
-  font-size: clamp(0.9rem, 0.02em + 1.1vw, 1.2em);
-  color: #718096;
-  margin-bottom: 0.5em;
-}
-
-.desc {
-  font-size: clamp(0.85rem, 0.01em + 0.95vw, 1.1em);
-  color: #4a5568;
-}
-
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  padding: 2rem;
-  background: #f9f9f9;
+  box-sizing: border-box;
 }
 
 #botany-container {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   padding: 1rem;
 }
 
 .botany-item {
-  /* width: 300px;
-  margin: 1rem; */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
   font-family: 'Segoe UI', sans-serif;
   position: relative;
   min-width: 0;
+  aspect-ratio: 1 / 1.4;
 }
 
 .botany-card {
-  padding: 1rem;
-  border-radius: 8px;
-  background: #fdfdfd;
-
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: none;
+  display: block;
 }
 
 .botany-card img {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
-  display: block;
-  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  z-index: 1;
 }
+
+/* --- MOBILE-SPECIFIC DISPLAY --- */
+.scientific-name-ribbon {
+    display: none;
+}
+.osage-name {
+    display:flex
+}
+.card-summary-full {
+    display: none;
+}
+
+.common-name-mobile {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* --- COMMON CARD CONTENT STYLES --- */
+.botany-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  min-height: 40%;
+}
+
+/* --- MEDIA QUERY for Larger Screens --- */
+@media (min-width: 768px) {
+    .scientific-name-ribbon {
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: -15px;
+        background-color: #5e3200;
+        color: white;
+        padding: 0.4rem 1.2rem 0.4rem 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+        z-index: 3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 15px);
+        box-sizing: border-box;
+    }
+
+    .osage-name {
+        display: block; /* Show Osage name */
+        font-family: 'Noto Sans Osage', serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #4a2e0f;
+        margin-bottom: 0.25rem;
+        margin-top: 0;
+    }
+
+    .common-name-mobile {
+        display: none;
+    }
+
+    .card-summary-full {
+        display: block;
+        font-size: 1rem;
+        color: #4a5568;
+        margin-bottom: 0;
+        margin-top: 0;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 .botany-card h2 {
   position: absolute;
@@ -101,26 +157,53 @@ input[type="search"] {
   background-color: #5e3200;
   color: white;
   padding: 0.4rem 1.2rem 0.4rem 1.5rem;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
   font-weight: 600;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-  z-index: 1;
+  z-index: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 15px);
+  box-sizing: border-box;
 }
 
 .botany-card .card-content {
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #2d2d2d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 1rem;
-  font-size: 0.9rem;
-  font-size: clamp(0.8rem, 0.01em + 0.9vw, 1rem);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  min-height: 35%;
 }
 
 .botany-card .osage-name {
   font-family: 'Noto Sans Osage', serif;
-  font-size: clamp(0.9rem, 0.02em + 1vw, 1.1rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.2em);
   font-weight: bold;
   color: #4a2e0f;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.botany-card .summary {
+  font-size: clamp(0.85rem, 1.2vw, 1.1em);
+  color: #4a5568;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 }
