@@ -1,3 +1,4 @@
+/* Global box-sizing */
 html {
   box-sizing: border-box;
 }
@@ -30,6 +31,7 @@ input[type="search"] {
   padding: 1rem;
 }
 
+/* Card container */
 .botany-item {
   border-radius: 12px;
   overflow: hidden;
@@ -60,116 +62,7 @@ input[type="search"] {
   z-index: 1;
 }
 
-/* --- MOBILE-SPECIFIC DISPLAY --- */
-.scientific-name-ribbon {
-    display: none;
-}
-.osage-name {
-    display:flex
-}
-.card-summary-full {
-    display: none;
-}
-
-.common-name-mobile {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #2d2d2d;
-    margin: 0;
-    padding-bottom: 0.5rem;
-    overflow-wrap: break-word;
-    word-break: break-all;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-/* --- COMMON CARD CONTENT STYLES --- */
-.botany-card .card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 1rem;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
-  min-height: 40%;
-}
-
-/* --- MEDIA QUERY for Larger Screens --- */
-@media (min-width: 768px) {
-    .scientific-name-ribbon {
-        display: block;
-        position: absolute;
-        top: 16px;
-        left: -15px;
-        background-color: #5e3200;
-        color: white;
-        padding: 0.4rem 1.2rem 0.4rem 1.5rem;
-        font-size: 1.3rem;
-        font-weight: 400;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-        z-index: 3;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: calc(100% - 15px);
-        box-sizing: border-box;
-    }
-
-    .osage-name {
-        display: block; /* Show Osage name */
-        font-family: 'Noto Sans Osage', serif;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #4a2e0f;
-        margin-bottom: 0.25rem;
-        margin-top: 0;
-    }
-
-    .common-name-mobile {
-        display: none;
-    }
-
-    .card-summary-full {
-        display: block;
-        font-size: 1rem;
-        color: #4a5568;
-        margin-bottom: 0;
-        margin-top: 0;
-        overflow-wrap: break-word;
-        word-break: break-all;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-.botany-card h2 {
-  position: absolute;
-  top: 16px;
-  left: -15px;
-  background-color: #5e3200;
-  color: white;
-  padding: 0.4rem 1.2rem 0.4rem 1.5rem;
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
-  font-weight: 600;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-  z-index: 3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: calc(100% - 15px);
-  box-sizing: border-box;
-}
-
+/* --- Card Content Overlay --- */
 .botany-card .card-content {
   position: absolute;
   bottom: 0;
@@ -187,23 +80,126 @@ input[type="search"] {
   min-height: 35%;
 }
 
-.botany-card .osage-name {
-  font-family: 'Noto Sans Osage', serif;
-  font-size: clamp(0.9rem, 1.5vw, 1.2em);
-  font-weight: bold;
-  color: #4a2e0f;
-  margin-bottom: 0.25rem;
-  margin-top: 0;
+/* --- Text elements — visible on all screen sizes --- */
+
+/* Scientific name ribbon */
+.scientific-name-ribbon {
+  position: absolute;
+  top: 16px;
+  left: -15px;
+  background-color: #5e3200;
+  color: white;
+  padding: 0.4rem 1.2rem 0.4rem 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-weight: 400;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  white-space: nowrap;
+  max-width: calc(100% - 15px);
+  box-sizing: border-box;
+  z-index: 5;
+  box-shadow: none;
 }
 
-.botany-card .summary {
-  font-size: clamp(0.85rem, 1.2vw, 1.1em);
-  color: #4a5568;
-  margin-bottom: 0;
-  margin-top: 0;
+/* Osage name */
+.osage-name {
+  font-family: 'Noto Sans Osage', serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  color: #4a2e0f;
+  margin: 0 0 0.25rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Common name */
+.common-name {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: bold;
+  color: #2d2d2d;
+  margin: 0 0 0.5rem 0;
   overflow-wrap: break-word;
   word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
+
+/* Summary */
+.card-summary-full {
+  font-size: clamp(0.95rem, 2vw, 1.15rem); /* bumped slightly larger */
+  color: #4a5568;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Try 4 lines, adjust as needed */
+  line-clamp: 4;
+}
+
+/* --- Larger screen adjustments --- */
+@media (min-width: 768px) {
+  /* Scientific name ribbon - styled as ribbon with absolute position */
+  .scientific-name-ribbon {
+    position: absolute;
+    top: 16px;
+    left: -15px;
+    padding: 0.4rem 1.2rem 0.4rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    white-space: nowrap;
+    max-width: calc(100% - 15px);
+    z-index: 3;
+    box-shadow: none;
+  }
+
+  /* Adjust padding-top on card-content since scientific name ribbon moves */
+  .botany-card .card-content {
+    padding-top: 1rem; /* less padding needed */
+    min-height: 35%;
+  }
+
+  /* Osage name */
+  .osage-name {
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    margin-bottom: 0.25rem;
+  }
+
+  /* Common name */
+  .common-name {
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    margin-bottom: 0.5rem;
+  }
+
+  /* Summary */
+  .card-summary-full {
+    font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  }
+
+  /* If you want the card heading to be styled like scientific name */
+  .botany-card h2 {
+    position: absolute;
+    top: 16px;
+    left: -15px;
+    background-color: #5e3200;
+    color: white;
+    padding: 0.4rem 1.2rem 0.4rem 1.5rem;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    font-weight: 600;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    z-index: 3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 15px);
+    box-sizing: border-box;
+  }
 }

@@ -1,21 +1,3 @@
-function truncateSummary(text, charLimit = 100) {
-  if (!text || text.trim() === '') {
-    return '';
-  }
-
-  let truncatedText = text;
-
-  if (text.length > charLimit) {
-    truncatedText = text.substring(0, charLimit);
-  }
-
-  if (truncatedText.length < text.length) {
-    return truncatedText.trim() + '..';
-  } else {
-    return truncatedText.trim();
-  }
-}
-
 const container = document.getElementById('botany-container');
 
 async function loadEthnobotanyData() {
@@ -41,19 +23,18 @@ async function loadEthnobotanyData() {
 
       const imageUrl = attrs.field_thumbnail_url || `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`;
 
-      // Get the full summary and truncate it
       const fullSummary = attrs.field_card_summary || '';
-      const displaySummary = truncateSummary(fullSummary);
-
-      // NEW: Truncate common name specifically for mobile display
-      const truncatedCommonNameForMobile = truncateSummary(attrs.field_common_name || '', 30); // You can adjust this character limit (e.g., 30 chars)
+      const commonName = attrs.field_common_name || '';
 
       botanyItem.innerHTML = `
         <div class="botany-card">
-          ${imageUrl ? `<img src="${imageUrl}" alt="${attrs.field_common_name || 'Plant Image'}" />` : ''}
-          <h2 class="scientific-name-ribbon">${attrs.field_scientific_name || ''}</h2> <div class="card-content">
+          ${imageUrl ? `<img src="${imageUrl}" alt="${commonName || 'Plant Image'}" />` : ''}
+          <h2 class="scientific-name-ribbon">${attrs.field_scientific_name || ''}</h2>
+          <div class="card-content">
             <p class="osage-name">${attrs.field_osage_name || ''}</p>
-            <p class="common-name-mobile">${truncatedCommonNameForMobile}</p> <p class="card-summary-full">${displaySummary}</p> </div>
+            <p class="common-name">${commonName}</p>
+            <p class="card-summary-full">${fullSummary}</p>
+          </div>
         </div>
       `;
 
@@ -64,7 +45,6 @@ async function loadEthnobotanyData() {
     container.innerHTML = `<p style="color: red;">Failed to load data.</p>`;
   }
 }
-
 
 loadEthnobotanyData();
 
